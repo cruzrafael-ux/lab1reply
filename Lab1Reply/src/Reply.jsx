@@ -68,7 +68,7 @@ function Reply() {
             {showParagraph2 ? (
                 showParagraph3 ? (
                     <Paragraph
-                        title="3. Editing"
+                        title="3. Replayability"
                         content="A simplified example of a gameplay loop would be the player 
                         starting a new game, completing their goal,
                         reaching the end, and then restarting to play again."    
