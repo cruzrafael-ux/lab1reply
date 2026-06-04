@@ -13,13 +13,13 @@ function Reply() {
     const [showParagraph3, setShowParagraph3] = useState(false);
 
      function checkAnswer1() {
-        answer1.toLowerCase() === "writing"
+        answer1.toLowerCase() === "interaction"
             ? setShowParagraph2(true)
             : setAnswer1("Try Again");
     }
 
     function checkAnswer2() {
-        const valid = ["vocals", "ad-libs", "harmonies", "live instruments"];
+        const valid = ["one", "one or more"];
 
         valid.includes(answer2.toLowerCase())
             ? setShowParagraph3(true)
@@ -29,29 +29,29 @@ function Reply() {
   return (
      <div>
             <header>
-            <h1>From an Idea to a Finished Song</h1>
-            <p>Music production is more than just recording vocals over a beat. 
-                There are several steps that go into taking an idea and turning 
-                it into a finished song that people can actually listen to.</p>
+            <h1>Game Design</h1>
+            <p> By Warren Ginter</p>
             </header>
 
             <Paragraph
-                title="1. Writing"
-                content="The first step is writing the song. This can include creating the beat, choosing the mood, writing lyrics, and figuring out the structure of the song. This is where the idea starts becoming something real."
+                title="1. Game Philosophy"
+                content="When designing a game, you generally want each part of the game 
+                to interact in some way and be important to
+                each other, this makes it feel like there's a good reason to interact with every system"
             />
 
             {showParagraph2 ? (
                 <Paragraph
-                    title="2. Recording"
-                    content="Once the song is written, the next step is recording. This is where
-                    the artist records vocals, ad-libs, harmonies, or any live
-                    instruments that are needed. A good recording matters because it is
-                    hard to make a bad recording sound completely clean later."
+                    title="2. Player Actions"
+                    content="Most games have one or more gameplay loops, which are the order of 
+                    actions a player repeats while playing
+                    the game. Gameplay loops can show the loop of actions in a certain activity or the loop or activities
+                    over the entire session"
                 />
             ) : (
                 <div>
                     <br />
-                    <p>Question: What is the first step in creating new music?</p>
+                    <p>Question: What is a core Game Design Principle?</p>
 
                     <input
                         type="text"
@@ -69,17 +69,15 @@ function Reply() {
                 showParagraph3 ? (
                     <Paragraph
                         title="3. Editing"
-                        content="After recording, the audio usually needs to be edited. This can
-                        mean choosing the best vocal takes, lining vocals up correctly,
-                        removing unwanted noise, and fixing small timing or pitch issues.
-                        Editing helps prepare everything before the actual mix begins."    
+                        content="A simplified example of a gameplay loop would be the player 
+                        starting a new game, completing their goal,
+                        reaching the end, and then restarting to play again."    
                      />
-                     
                 ) : (
                     <div>
                         <br />
                         <p>
-                            Question: What is 1 action an artist must record?
+                            Question: How many gameplay loops are in a game?
                         </p>
 
                         <input
