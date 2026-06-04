@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #39344a;
+  color: white;
+}
+
+p, h2, header {
+  margin: 0;
+  padding: 15px 0 5px 0;
+  text-align: center;
+}
+
+input, button {
+  display: block;
+  margin: 10px auto;
+  items-align: center;
+}
